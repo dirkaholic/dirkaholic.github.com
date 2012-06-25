@@ -5,7 +5,7 @@ server_port: 4000
 baseurl:     /
 url:         http://localhost:4000
 title:       Diplom-Wirtschaftsinformatiker Dirk Pahl
-keywords:    Dirk Pahl, Informatik, Informatiker, Lebenslauf, Programmierung, Software, Entwickler, Java, PHP, SQL, HTML, XML, Javascript, Diplom, Wirtschaftsinformatik, Diplom, Wirtschaftsinformatiker
+keywords:    Dirk Pahl, Informatik, Informatiker, Lebenslauf, Senior Software Developer, Software, Entwickler, PHP, Java, SQL, HTML, MySQL, Javascript, Diplom, Wirtschaftsinformatik, Diplom, Wirtschaftsinformatiker
 description: Lebenslauf Diplom-Wirtschaftsinformatiker Dirk Pahl
 
 source:      .
