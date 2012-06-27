@@ -7,13 +7,13 @@
     {% else %}
     <title>{{ site.title }}</title>
     {% endif %}
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="MobileOptimized" content="320" />
-    <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no" name="viewport" />
-    <meta name="author" content="Dirk Pahl" />
-    <meta name="description" content="{{ site.description }}" />
-    <meta name="keywords" content="{{ site.keywords }}" />
-    <link  href="http://fonts.googleapis.com/css?family=Oswald:regular" rel="stylesheet" type="text/css" >
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="MobileOptimized" content="320"/>
+    <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+    <meta name="author" content="Dirk Pahl"/>
+    <meta name="description" content="{{ site.description }}"/>
+    <meta name="keywords" content="{{ site.keywords }}"/>
+    <link href="http://fonts.googleapis.com/css?family=Oswald:regular" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Junge' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/fonts/raphaelicons.css">
@@ -25,20 +25,29 @@
         _gaq.push(['_setAccount', 'UA-31129610-1']);
         _gaq.push(['_trackPageview']);
 
-        (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
         })();
 
     </script>
 </head>
-<!--[if lt IE 7]> <body class="ie6 oldies"> <![endif]-->
-<!--[if IE 7]>    <body class="ie7 oldies"> <![endif]-->
-<!--[if IE 8]>    <body class="ie8 oldies"> <![endif]-->
-<!--[if gt IE 8]><!--><body><!--<![endif]-->
+<!--[if lt IE 7]>
+<body class="ie6 oldies"> <![endif]-->
+<!--[if IE 7]>
+<body class="ie7 oldies"> <![endif]-->
+<!--[if IE 8]>
+<body class="ie8 oldies"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<body><!--<![endif]-->
 
-<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a
+    different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a>
+    to experience this site.</p><![endif]-->
 <header class="clearfix">
     <div class="container">
         <a id="logo" href="/">dirkaholic</a>
@@ -50,7 +59,8 @@
         <nav class="clearfix">
             <ul role="navigation">
                 <li>
-                    <a href="/" {% if page.id == "home" %}class="activePage"{% endif %}><span class="icon">S</span>Home</a>
+                    <a href="/" {% if page.id == "home" %}class="activePage"{% endif %}><span
+                        class="icon">S</span>Home</a>
                 </li>
                 <!--
                 <li>
@@ -58,10 +68,12 @@
                 </li>
                 -->
                 <li>
-                    <a href="disclaimer.html" {% if page.id == "disclaimer" %}class="activePage"{% endif %}>><span class="icon">E</span>Disclaimer</a>
+                    <a href="disclaimer.html" {% if page.id == "disclaimer" %}class="activePage"{% endif %}>><span
+                        class="icon">E</span>Disclaimer</a>
                 </li>
                 <li>
-                    <a href="imprint.html" {% if page.id == "imprint" %}class="activePage"{% endif %}>><span class="icon">E</span>Impressum</a>
+                    <a href="imprint.html" {% if page.id == "imprint" %}class="activePage"{% endif %}>><span
+                        class="icon">E</span>Impressum</a>
                 </li>
                 <!--
                 <li>
@@ -69,7 +81,8 @@
                 </li>
                 -->
                 <li>
-                    <a href="contact.html" {% if page.id == "contact" %}class="activePage"{% endif %}><span class="icon">M</span>Contact me</a>
+                    <a href="contact.html" {% if page.id == "contact" %}class="activePage"{% endif %}><span
+                        class="icon">M</span>Contact me</a>
                 </li>
             </ul>
         </nav>
@@ -79,7 +92,8 @@
 <footer role="contentinfo">
     <p>
         <span class="left">CSS Junction &copy; - 2012 | Released under Creative Common License. <a href="#">Goto Top</a></span>
-        <a href="/">HOME</a> | <a href="disclaimer.html">DISCLAIMER</a> | <a href="imprint.html">IMPRESSUM</a> | <a href="contact.html">CONTACT ME</a>
+        <a href="/">HOME</a> | <a href="disclaimer.html">DISCLAIMER</a> | <a href="imprint.html">IMPRESSUM</a> | <a
+            href="contact.html">CONTACT ME</a>
     </p>
 </footer>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
