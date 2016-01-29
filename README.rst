@@ -1,1 +1,0 @@
-Personal homepage of Dirk Pahl

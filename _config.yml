@@ -1,44 +1,30 @@
-safe:        false
-auto:        false
-server:      false
-server_port: 4000
-baseurl:     /
-url:         http://localhost:4000
-title:       Diplom-Wirtschaftsinformatiker Dirk Pahl
-keywords:    Dirk Pahl, Informatik, Informatiker, Lebenslauf, Senior Software Developer, Software, Entwickler, PHP, Java, SQL, HTML, MySQL, Javascript, Diplom, Wirtschaftsinformatik, Diplom, Wirtschaftsinformatiker
-description: Lebenslauf Diplom-Wirtschaftsinformatiker Dirk Pahl
-
-source:      .
-destination: ./_site
-plugins:     ./_plugins
-
-future:      true
-lsi:         false
-pygments:    false
-markdown:    maruku
-permalink:   date
-
-maruku:
-  use_tex:    false
-  use_divs:   false
-  png_engine: blahtex
-  png_dir:    images/latex
-  png_url:    /images/latex
-
+highlighter: pygments
+markdown: rdiscount
 rdiscount:
-  extensions: []
+  extensions: [smart]
+permalink: /:title.html
+paginate: 5
+gems: [jekyll-paginate]
+port: 4000
+safe: true
+url: http://dirkaholic.github.io
+author: Dirk Pahl
 
-kramdown:
-  auto_ids: true,
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  use_coderay: false
-  
-  coderay:
-    coderay_wrap: div
-    coderay_line_numbers: inline
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: style
+# edit this section with your information
+baseurl: /
+title: Dirk Pahl's Resume
+name: Dirk Pahl
+email: dirk.pahl@googlemail.com
+email_full: mailto:dirk.pahl@googlemail.com
+website: dirkaholic.github.io
+website_full: https://dirkaholic.github.io
+github: dirkaholic
+twitter: dirkaholic
+google_maps: 'https://www.google.de/maps/place/Lübben+(Spreewald)'
+postcode: 15907
+city: Luebben
+country: Germany
+google_analytics: UA-31129610-1
+
+# needed for travis-ci build
+exclude: [vendor]
