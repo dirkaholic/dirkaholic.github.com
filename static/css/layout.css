@@ -136,6 +136,16 @@ em {
         font-size: 80%;
         line-height: 80%;
     }
+
+    article {
+        page-break-inside: avoid;
+    }
+
+    .no-print
+    {
+        display: none !important;
+        height: 0;
+    }
 }
 
 footer p {
