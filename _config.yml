@@ -4,7 +4,7 @@ rdiscount:
   extensions: [smart]
 permalink: /:title.html
 paginate: 5
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 port: 4000
 safe: true
 url: http://dirkaholic.github.io
@@ -12,17 +12,189 @@ author: Dirk Pahl
 
 # edit this section with your information
 baseurl: /
-title: Dirk Pahl's Resume
 name: Dirk Pahl
-website: dirkaholic.github.io
-website_full: https://dirkaholic.github.io
+website: cv.dirkaholic.io
+website_full: https://cv.dirkaholic.io
 github: dirkaholic
 twitter: dirkaholic
 google_maps: 'https://www.google.de/maps/place/Lübben+(Spreewald)'
 postcode: 15907
-city: Luebben
 country: Germany
 google_analytics: UA-31129610-1
 
 # needed for travis-ci build
 exclude: [vendor]
+
+languages:          ['en', 'de']
+
+title:
+  en: CV Dirk Pahl - Backend Developer | Software Architect | DevOps Engineer
+  de: Lebenslauf Dirk Pahl - Backend Developer | Software Architect | DevOps Engineer
+description:
+  en: Curriculum vitae of Dirk Pahl. I've worked as Backend Developer, Software Architect and DevOps Engineer.
+  de: Lebenslauf von Dirk Pahl. 
+index:
+  en: /
+  de: index.de.html
+city: 
+  en: Luebben
+  de: Lübben
+country: 
+  en: Germany
+  de: Deutschland
+heading:
+  employment:
+    en: Employment
+    de: Beruflicher Werdegang
+  education:
+    en: Education
+    de: Ausbildung
+  skills:
+    en: Professional skills
+    de: Professionelle Kenntnisse
+  initiatives:
+    en: Conferences
+    de: Konferenzen
+  interests:
+    en: Hobbies & Interests
+    de: Hobbys & Interessen
+present:
+  en: present
+  de: jetzt
+formerly:
+  en: formerly
+  de: ehemals
+now:
+  en: now
+  de: jetzt
+months:
+  jan:
+    en: January
+    de: Januar
+  feb:
+    en: February
+    de: Februar
+  mar:
+    en: March
+    de: März
+  apr:
+    en: April
+    de: April
+  may:
+    en: May
+    de: Mai
+  jun:
+    en: June
+    de: Juni
+  jul:
+    en: July
+    de: Juli
+  aug:
+    en: August
+    de: August
+  sep:
+    en: September
+    de: September
+  oct:
+    en: October
+    de: Oktober
+  nov:
+    en: November
+    de: November
+  dec:
+    en: December
+    de: Dezember
+employment:
+  nl2go:
+    line1: 
+      en: Develop backend services, API's and infrastructure tools based on PHP, Java/Spring Boot and golang
+      de: Entwicklung von Backend Services, API's und Infrastructure Tools mit PHP, Java/Spring Boot und go
+    line2: 
+      en: Maintain the completely self managed infrastructure components like Percona Server for MySQL, ElasticSearch etc. using puppet und ansible
+      de: Maintenance der selbst verwalteten Infrastruktur-Komponenten wie Percona Server für MySQL, ElasticSearch usw. mit Hilfe von puppet und ansible
+    line3: 
+      en: Setup infrastructure/application monitoring using telegraf, InfluxDB and grafana
+      de: Setup des Infrastruktur- und Application Monitoring unter Verwendung von telegraf, InfluxDB und grafana
+  1ftbl-lead:
+    line1: 
+      en: Develop a service oriented architecture for the backend of the Onefootball app
+      de: Aufbau einer Service orientierten Backend-Software-Architektur für die Onefootball App
+    line2: 
+      en: Recruit and lead the backend team (including DevOps)
+      de: Aufbau und Führung des Backend Teams (inclusive DevOps)
+    line3: 
+      en: Act as a hands on software architect implementing micro services and backend components
+      de: Implementierung von Microservices und Backend-Komponenten mit go
+  1ftbl-dev:
+    line1: 
+      en: Backend feature development for the Onefootball app (formerly known as iLiga / THE Football App)
+      de: Entwicklung von Backend-Funktionalitäten für die Onefootball App (ehemals iLiga - THE Football App)
+    line2: 
+      en: Migrate the monolythic legacy PHP application to a service based on Symfony2
+      de: Migration der monolytischen PHP-Anwendung zu einer Service orientierten Architektur basierend auf Symfony2
+    line3: 
+      en: Migrate the PHP backend application from bare metal to AWS
+      de: Migration der PHP Backend-Applikation von Bare Metal zu AWS
+  vz-dev:
+    line1: 
+      en: Development of a REST API based on Symfony2 for the biggest german social network (studiVZ, schuelerVZ and meinVZ)
+      de: Entwicklung einer REST-API auf Basis von Symfony2
+    line2: 
+      en: Frontend feature development based on Google Web Toolkit
+      de: Umsetzung von Frontend-Funktionalitäten mit Java und GWT
+    line3: 
+      en: Service and maintenance of the Jenkins CI server
+      de: Service und Unterhaltung  des Jenkins CI Servers
+  vz-back:
+    line1: 
+      en: Build a REST API based on Symfony2 on top of the existing monolythic PHP application
+      de: Entwicklung einer REST API auf Basis von Symfony2 aufsetzend auf der existieren monolytischen PHP-Applikation
+    line2: 
+      en: Develop features for the support system of the social network
+      de: Feature-Entwicklung für das Support-Tool des Netzwerks
+  vz-qa:
+    line1: 
+      en: Quality Assurance Developer in the engineering department
+      de: Test- und Qualitätsmanager im Bereich Engineering
+    line2: 
+      en: Develop automated acceptance tests for studiVZ, schuelerVZ and meinVZ
+      de: Automatisierte Software-Tests für studivz.net, meinvz.net und schuelervz.net mit Selenium und PHPUnit
+    line3: 
+      en: Service and maintenance of the Bamboo CI server
+      de: Service und Unterhaltung des Bamboo CI server
+  tw:
+    line1: 
+      en: Development of an internet based ticketing solution built on Linux, Apache, MySQL and PHP with several webservice interfaces
+      de: Entwicklung der firmeneigenen Ticketing-Software ENTREE tickets mit angeschlossenem Finanz- und CRM-Modul auf Basis von Linux, Apache, MySQL und PHP
+    line2: 
+      en: Administration and configuration of ticketing servers with focus on load balancing, system stability and continuous performance
+      de: Automatisierte Software-Tests für studivz.net, meinvz.net und schuelervz.net mit Selenium und PHPUnit
+    line3: 
+      en: Setup and run ticket shops for clubs like Borussia Dortmund, Hamburger SV, Hertha BSC and municipal organisations in Vienna, Munich etc.
+      de: Auftragsentwicklung der Ticketing-Software eventim.Tixx® für die CTS EVENTIM Sports GmbH mit Online-Shops von diversen Bundesliga-Vereine wie Borussia Dortmund, Hamburger SV, Hertha BSC
+  letras:
+    line1: 
+      en: Java development for customer projects
+      de: Programmierung von Kunden-Projekten in Java
+    line2: 
+      en: Development of an IP traffic invoicing service
+      de: Entwicklung eines Abrechnungs-Service für IP Traffic
+    line3: 
+      en: Administration of linux servers
+      de: Administration von Linux Servern
+education:
+  header:
+    en: Diploma, Business Informatics
+    en: Diplom, Wirtschaftsinformatik
+  university:
+    en: University of Applied Sciences
+    de: Technische Fachhochschule
+  thesis:
+    en: "Thesis: Associative text analysis system to verify brand positioning concepts"
+    de: "Diplomarbeitsthema: Assoziatives Textanalysesystem zur Überprüfung der Positionierung einer Marke hinsichtlich bestimmter Begriffe"
+  thesis-details:
+    en: Java program for the text analysis, graphical presentation system for the Heinz Nixdorf Museums Forum based on Java applets and servlets
+    de: Separates Java-Programm zur Analyse, Grafisches Präsentationssystem für das Heinz Nixdorf MuseumsForum basierend auf Java Applets und Servlets
+interests:
+  en: Football, Technology
+  de: Fußball, Technologie
