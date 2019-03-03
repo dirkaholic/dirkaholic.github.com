@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ page.lang }}">
 <head>
     <meta charset="utf-8">
-    <title>{{ site.title }}</title>
-    <meta name="description" content="{{ site.name }}'s Résumé">
-    <meta name="author" content="{{ site.name }} @{{ site.twitter }}">
+    <title>{{ site.title[page.lang] | escape }}</title>
+    <meta name="description" content="{{ site.description[page.lang] }}">
+  
+    <meta name="author" content="{{ site.name }} - @{{ site.twitter }}">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -17,10 +18,13 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link rel="shortcut icon" href="{{ site.baseurl }}static/img/favicon.ico">
-    <!-- <link rel="apple-touch-icon" href="static/img/me-icon-57.png"> -->
-    <!-- <link rel="apple-touch-icon" sizes="72x72" href="static/img/me-icon-72.png"> -->
-    <!-- <link rel="apple-touch-icon" sizes="114x114" href="static/img/me-icon-114.png"> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}static/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}static/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}static/img/favicon-16x16.png">
+    <link rel="manifest" href="{{ site.baseurl }}static/img/site.webmanifest">
+    <link rel="mask-icon" href="{{ site.baseurl }}static/img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
 <div class="container">
@@ -34,8 +38,8 @@
             <a href="{{ site.google_maps }}">
                 {{ site.address }}<br/>
                 {{ site.postcode }}<br/>
-                {{ site.city }}<br/>
-                {{ site.country }}
+                {{ site.city[page.lang] | escape }}<br/>
+                {{ site.country[page.lang] | escape }}
             </a>
         </address>
         <p>
@@ -46,6 +50,11 @@
             <a href="https://github.com/{{ site.github }}"><i class="fa fa-github"></i> Github</a><br/>
             <a href="https://twitter.com/{{ site.twitter }}"><i class="fa fa-twitter"></i> Twitter</a><br/>
             <a href="https://de.linkedin.com/in/dirkpahl"><i class="fa fa-linkedin"></i> LinkedIn</a><br/>
+        </p>
+        <p  class="no-print">        
+            {% for lang in site.languages %}
+                <a class="page-link" href="{{ site.index[lang] }}">{{ lang }}</a>
+            {% endfor %}
         </p>
     </header>
     <div class="thirteen columns clearfix">

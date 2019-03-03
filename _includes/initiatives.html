@@ -1,5 +1,5 @@
-<section class="thirteen columns">
-    <h1>Conferences</h1>
+<section class="thirteen columns no-print">
+    <h1>{{ site.heading.initiatives[page.lang] | escape }}</h1>
     <article>
         <header>
             <h1>GopherCon</h1>
@@ -9,13 +9,13 @@
     <article>
         <header>
             <h1>Symfony Live</h1>
-            <span><address>Berlin, Germany</address><time>2012</time></span>
+            <span><address>Berlin, {{ site.country[page.lang] | escape }}</address><time>2012</time></span>
         </header>
     </article>
     <article>
         <header>
             <h1>Google Developer Days</h1>
-            <span><address>Berlin, Germany</address><time>2011</time></span>
+            <span><address>Berlin, {{ site.country[page.lang] | escape }}</address><time>2011</time></span>
         </header>
     </article>
     <article>
