@@ -3,6 +3,15 @@
 Personal homepage (curriculum vitae or resume) of Dirk Pahl, powered by [Jekyll](http://jekyllrb.com/) and freely
 hosted in [Github pages](https://pages.github.com/).
 
+## Run locally
+
+```
+docker run --rm --volume="$PWD:/srv/jekyll" -it jekyll/jekyll:latest jekyll build
+docker-compose up
+```
+
+Open http://192.168.99.100:4000/.
+
 ## Copyright & License
 
 Copyright (C) 2015 - Released under the MIT License.
