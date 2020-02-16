@@ -107,8 +107,8 @@ months:
 employment:
   nl2go:
     line1: 
-      en: Develop backend services, API's and infrastructure tools based on PHP, Java/Spring Boot and golang
-      de: Entwicklung von Backend Services, API's und Infrastructure Tools mit PHP, Java/Spring Boot und go
+      en: Develop backend services, API's and infrastructure tools based on PHP, Java/Spring Boot and Go
+      de: Entwicklung von Backend Services, API's und Infrastructure Tools mit PHP, Java/Spring Boot und Go
     line2: 
       en: Maintain the completely self managed infrastructure components like Percona Server for MySQL, ElasticSearch etc. using puppet und ansible
       de: Maintenance der selbst verwalteten Infrastruktur-Komponenten wie Percona Server für MySQL, ElasticSearch usw. mit Hilfe von puppet und ansible
@@ -123,8 +123,8 @@ employment:
       en: Recruit and lead the backend team (including DevOps)
       de: Aufbau und Führung des Backend Teams (inclusive DevOps)
     line3: 
-      en: Act as a hands on software architect implementing micro services and backend components
-      de: Implementierung von Microservices und Backend-Komponenten mit go
+      en: Act as a hands on software architect implementing micro services and backend components using Go
+      de: Implementierung von Microservices und Backend-Komponenten mit Go
   1ftbl-dev:
     line1: 
       en: Backend feature development for the Onefootball app (formerly known as iLiga / THE Football App)
