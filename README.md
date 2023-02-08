@@ -10,7 +10,7 @@ docker run --rm --volume="$PWD:/srv/jekyll" -it jekyll/jekyll:latest jekyll buil
 docker-compose up
 ```
 
-Open http://192.168.99.100:4000/.
+Open http://localhost:4000/.
 
 ## Copyright & License
 

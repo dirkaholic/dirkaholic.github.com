@@ -105,6 +105,16 @@ months:
     en: December
     de: Dezember
 employment:
+  systel:
+    line1: 
+      en: Administration and automation of AWS services and applications
+      de: Administration und Automation von AWS-Services und Anwendungen
+    line2: 
+      en: Recording, analysis and troubleshooting of incidents
+      de: Aufnahme, Analyse und Behebung von Störungen
+    line3: 
+      en: Advising of customers and partners in the aspects of technical, professional and commercial optimization potentials
+      de: Beratung von Kunden und Partnern in den Aspekten technischer, fachlicher und kaufmännischer Optimierungspotentiale 
   nl2go:
     line1: 
       en: Develop backend services, API's and infrastructure tools based on PHP, Java/Spring Boot and Go
