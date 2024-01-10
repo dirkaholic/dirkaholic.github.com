@@ -141,7 +141,7 @@ em {
         page-break-inside: avoid;
     }
 
-    section {
+    section:not(:first-child) {
         page-break-inside: avoid;
     }
 
