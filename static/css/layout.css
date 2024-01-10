@@ -137,10 +137,6 @@ em {
         line-height: 80%;
     }
 
-    article {
-        page-break-inside: avoid;
-    }
-
     section:not(:first-child) {
         page-break-inside: avoid;
     }
