@@ -141,6 +141,10 @@ em {
         page-break-inside: avoid;
     }
 
+    section {
+        page-break-inside: avoid;
+    }
+
     .no-print
     {
         display: none !important;
